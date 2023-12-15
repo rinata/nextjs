@@ -1,8 +1,10 @@
 import Head from "next/head"
 import Button from "../button"
 import styles from '@/styles/Home.module.css'
+import { useRouter } from "next/router"
 
 const Navbar = () => {
+  const router = useRouter()
   return (
     <>
       <Head>
@@ -14,14 +16,14 @@ const Navbar = () => {
           Navbar
         </h3>
         <div>
-          <Button>
+          <Button onClick={() => router.push('/')} style="flat">
             Home
           </Button>
-          <Button>
-            Login
+          <Button onClick={() => router.push('/about')} style="flat">
+            About
           </Button>
-          <Button>
-            Register
+          <Button onClick={() => router.push('/login')} style="flat">
+            Login
           </Button>
         </div>
       </div>

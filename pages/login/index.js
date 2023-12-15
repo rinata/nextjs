@@ -1,11 +1,11 @@
 import Layout from '@/layout'
 
-export default function Home() {
+export default function Login() {
   return (
     <>
       <Layout>
         <h1 className="text-3xl font-bold underline">
-          Ini isi konten
+          Ini adalah halaman login
         </h1>
       </Layout>
     </>
